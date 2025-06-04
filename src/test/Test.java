@@ -10,7 +10,7 @@ public class Test {
 	public static void main(String[] args) throws InterruptedException{
 		// TODO Auto-generated method stub
 		
-		//QUEREMOS SABER EL FACTORIAL DE 100000
+		//QUEREMOS SABER EL FACTORIAL DE n
 		final int n = 100000;
 		
 		//Iniciamos a contar el tiempo para el algoritmo secuencial
@@ -23,7 +23,7 @@ public class Test {
 		//tomamos el tiempo final del algoritmo secuencial
 		long finTiempo=System.currentTimeMillis();
 		
-		System.out.printf("Factorial de 100000 de forma Secuencial----> Resultado = %d, Tiempo = %.4f%n", s1.getResultadoSecuencial(), (finTiempo-inicioTiempo)/1000.0);
+		System.out.printf("Factorial de %d de forma Secuencial----> Resultado = %d, Tiempo = %.4f%n", n, s1.getResultadoSecuencial(), (finTiempo-inicioTiempo)/1000.0);
 		
 		
 		
@@ -50,7 +50,7 @@ public class Test {
 		//tomamos el tiempo final del algoritmo concurrente
 		finTiempo=System.currentTimeMillis();
 						
-		System.out.printf("\nFactorial de 100000 de forma concurrente con 2 hilos----> Resultado = %d, Tiempo = %.4f%n", total, (finTiempo-inicioTiempo)/1000.0);
+		System.out.printf("\nFactorial de %d de forma concurrente con 2 hilos----> Resultado = %d, Tiempo = %.4f%n", n, total, (finTiempo-inicioTiempo)/1000.0);
 	}
 
 }
