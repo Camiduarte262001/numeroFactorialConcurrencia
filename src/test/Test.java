@@ -23,7 +23,7 @@ public class Test {
 		//tomamos el tiempo final del algoritmo secuencial
 		long finTiempo=System.currentTimeMillis();
 		
-		System.out.printf("Factorial de 100000 de forma Secuencial----> Resultado = %d, Tiempo = %.4f%n", s1.getResultadoSecuencial().bitCount(), (finTiempo-inicioTiempo)/1000.0);
+		System.out.printf("Factorial de 100000 de forma Secuencial----> Resultado = %d, Tiempo = %.4f%n", s1.getResultadoSecuencial(), (finTiempo-inicioTiempo)/1000.0);
 		
 		
 		
@@ -50,7 +50,7 @@ public class Test {
 		//tomamos el tiempo final del algoritmo concurrente
 		finTiempo=System.currentTimeMillis();
 						
-		System.out.printf("\nFactorial de 100000 de forma concurrente con 2 hilos----> Resultado = %d, Tiempo = %.4f%n", total.bitCount(), (finTiempo-inicioTiempo)/1000.0);
+		System.out.printf("\nFactorial de 100000 de forma concurrente con 2 hilos----> Resultado = %d, Tiempo = %.4f%n", total, (finTiempo-inicioTiempo)/1000.0);
 	}
 
 }
